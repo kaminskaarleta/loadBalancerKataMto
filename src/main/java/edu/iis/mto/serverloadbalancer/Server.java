@@ -20,7 +20,7 @@ public class Server {
 
 	public void addVm(Vm vm) {
 		this.vms.add(vm);
-		this.currentLoadPecentage = (double) vm.size / (double) this.capacity
+		this.currentLoadPecentage += (double) vm.size / (double) this.capacity
 				* MAXIMUM_LOAD;
 	}
 
